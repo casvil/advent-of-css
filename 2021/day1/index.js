@@ -10,7 +10,7 @@ fs.readFile("./input.txt", (error, data) => {
   const initialValue = 0;
 
   const reducer = (accumulator, item, index, array) =>
-    index + 1 < array.length && parseInt(item) < array[index + 1]
+    index + 1 < array.length && parseInt(item) < parseInt(array[index + 1])
       ? accumulator + 1
       : accumulator;
 
