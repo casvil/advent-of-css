@@ -6,7 +6,6 @@ fs.readFile("./input.txt", (error, data) => {
   }
 
   const input = data.toString().split("\n");
-
   const initialValue = 0;
 
   const reducer = (accumulator, item, index, array) =>
@@ -15,5 +14,6 @@ fs.readFile("./input.txt", (error, data) => {
       : accumulator;
 
   const increased = input.reduce(reducer, initialValue);
+
   console.log("Total increased:", increased);
 });
