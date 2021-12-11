@@ -30,10 +30,10 @@ const getMinutes = (seconds) => {
 
 const getSeconds = (seconds) => {
   if (seconds < 60) {
-    return seconds;
+    return seconds || "00";
   }
 
-  return seconds % 60;
+  return seconds % 60 || "00";
 };
 
 const PomodoroTimer = () => {
