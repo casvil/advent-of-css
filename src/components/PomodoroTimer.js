@@ -11,6 +11,7 @@ const StyledPomodoroTimer = styled.div`
   border-radius: 50%;
   height: 80vh;
   width: 80vh;
+  box-shadow: 0px 0px 100px 10px #8a8686;
 `;
 
 const StyledTime = styled.div`
